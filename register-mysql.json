@@ -1,0 +1,22 @@
+{
+  "name": "mysql-connector",
+  "config": {
+    "connector.class": "io.debezium.connector.mysql.MySqlConnector",
+    "tasks.max": "1",
+    "database.hostname": "mysql",
+    "database.port": "3306",
+    "database.user": "root",
+    "database.password": "root",
+    "database.server.id": "184054",
+    "database.server.name": "netflix",
+    "database.include.list": "db_movies_netflix_transact",
+    "database.history.kafka.bootstrap.servers": "kafka:9092",
+    "database.history.kafka.topic": "schema-changes.db_movies_netflix_transact",
+    "include.schema.changes": "true",
+    "snapshot.mode": "initial",
+    "snapshot.locking.mode": "none",
+    "topic.prefix": "netflix",
+    "schema.history.internal.kafka.topic": "schema-history-topic",
+    "schema.history.internal.kafka.bootstrap.servers": "kafka:9092"
+  }
+}
