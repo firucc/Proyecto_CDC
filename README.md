@@ -134,7 +134,7 @@ docker exec -it kafka kafka-topics --bootstrap-server=kafka:9092 --list
 ## 4. Crear un consumidor de Kafka
 Este comando inicia un consumidor que leerá los mensajes del topic correspondiente a los cambios en la base de datos:
 ```bash
-docker exec -it kafka kafka-console-consumer --bootstrap-server kafka:9092 --topic db_movies_netflix_transact.db_movies_netflix_transact.movie --from-beginning
+docker exec -it kafka kafka-console-consumer --bootstrap-server kafka:9092 --topic netflix.db_movies_netflix_transact.movie --from-beginning
 ```
 
 ## 5. Iniciar contenedor MySQL
